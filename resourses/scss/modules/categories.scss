@@ -1,0 +1,53 @@
+.categories {
+	.categories-catalog{
+		display: flex;
+		flex-direction: column;
+		padding: 50px;
+		border-bottom: 1px solid $lightgray;
+   		 margin-bottom: 20px;
+		.wrapper {
+			display: flex;
+			flex-direction: row;
+			padding: 50px;
+			.filter-value {
+				margin-bottom: 10px;
+			}
+			.categories-list {				
+				border-right: 1px solid lightgray;
+				margin-right: 20px;
+				padding-right: 20px;
+				.categorie-item {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					margin-bottom: 10px;
+					border-bottom: 1px solid lightgray;
+					.item-name {
+						padding-left: 10px;
+						margin-right: 2px;	
+						width: 90%;					
+						&:hover {
+							cursor: pointer;						
+							color: $blue;
+						}	
+					}
+					.item-delete {
+						width: 10%;
+						&:hover {
+							cursor: pointer;
+							transform: scale(1.5);
+						}
+					}				
+				}
+			}
+			.editor{
+				display: flex;
+    			flex-direction: column;
+				.validation-error {
+					color: red;
+					font-size: 10px;
+				}
+			}
+		}
+	}	
+}

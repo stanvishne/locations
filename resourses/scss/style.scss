@@ -1,0 +1,83 @@
+body {
+	background-color: white;
+}
+
+.locations-app {
+	width:100%;
+	height:100%;
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+	@import './common/variables.scss';
+	@import './common/common.scss';
+	@import './modules/categories.scss';
+	@import './modules/locations.scss';
+
+	.home {
+		margin: 20px;
+		
+	}
+
+	.header {
+		//height:200px;
+		background-color: lightgreen;
+		padding: 50px;
+		flex: 1 0 auto;
+	}
+	.content {
+		padding: 50px;
+		background-color: lightblue;
+		flex: 8 0 auto;
+		.select-form {
+			width:50%;
+		}
+	}
+	.footer {
+		padding: 50px;
+		background-color: lightgoldenrodyellow;
+		flex: 1 0 auto;
+	}
+}
+
+.marker-wrapper {
+	display: flex;
+	flex-direction: row;
+	.marker {
+		background-color: lightblue;
+		color: black;
+		border: 1px solid black;
+		width: 15px;
+		height: 15px;
+		border-radius: 20px;
+		padding:7px;
+	}
+	.arrow-left {
+		width: 0; 
+		height: 0; 
+		margin-top: 5px;
+		margin-left: 3px;
+		border-top: 5px solid transparent;
+		border-bottom: 5px solid transparent; 		
+		border-right: 5px solid blue; 
+	}
+	.label{
+		font-size: 14px;
+		color: black
+	}
+}
+
