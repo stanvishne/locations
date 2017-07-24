@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress",
-    "build": "NODE_ENV=production webpack -p",
+    "build": "NODE_ENV=production webpack -p && node build.js",
     "test": "karma start"
   },
   "author": "",
@@ -18,6 +18,7 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "chai": "^3.5.0",
+    "copy": "^0.3.0",
     "css-loader": "^0.23.1",
     "expect": "^1.20.1",
     "file-loader": "^0.8.5",
