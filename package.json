@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --progress",
-    "build": "NODE_ENV=production webpack -p && build.js",
+    "build": "NODE_ENV=production webpack -p && node build.js",
     "test": "karma start"
   },
   "author": "",
