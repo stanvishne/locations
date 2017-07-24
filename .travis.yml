@@ -14,3 +14,9 @@ deploy:
     on:
       branch: master
   
+   - provider: npm
+    email: stanvishne@gmail.com
+    api_key: $NPM_TOKEN
+    on:
+      tags: true
+      repo: stanvishne/locations
