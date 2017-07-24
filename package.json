@@ -8,8 +8,9 @@
     "build": "NODE_ENV=production webpack -p && node build.js",
     "test": "karma start"
   },
-  "author": "",
-  "license": "ISC",
+  "files": ["src","resourses"],
+  "author": "stanvishne",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
